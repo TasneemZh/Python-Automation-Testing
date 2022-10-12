@@ -1,6 +1,6 @@
-from classes.system.Course import Course
-from classes.system.Student import Student
-from classes.system.Teacher import Teacher
+from classes.university.Course import Course
+from classes.university.Student import Student
+from classes.university.Teacher import Teacher
 
 if __name__ == '__main__':
     # Create 3 teachers, and print teacher info for each one
