@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/expedia-search/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/expedia-search/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/get-requests/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.10 (Python-Automation-Testing)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
