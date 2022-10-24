@@ -4,7 +4,7 @@ import csv
 class ManageCsv:
     @staticmethod
     def read_csv():
-        with open('test.csv', 'rt') as file:
+        with open('../files/test.csv', 'rt') as file:
             reader = csv.reader(file)
             next(reader)
             print("Reading CSV File:-")
@@ -13,7 +13,7 @@ class ManageCsv:
 
     @staticmethod
     def write_csv():
-        with open('test.csv', 'w', newline='') as file:
+        with open('../files/test.csv', 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerows([
                 ["rowNum", "fieldCol1", "fieldCol2"],
