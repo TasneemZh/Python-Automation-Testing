@@ -44,7 +44,8 @@ class TestExpediaSearch(TestCase):
                     raise RuntimeError("Unknown search result!")
             search_status = self.bing_results.check_next_search_result()
 
-        if not_found_count >= page_results_count:
+        print("\nnot_found_count: " + str(not_found_count) + ", page_results_count: " + str(page_results_count))
+        if not_found_count == page_results_count:
             self.manage_csv.write_to_csv(["Hotel not found!", address, ""])
 
     @classmethod

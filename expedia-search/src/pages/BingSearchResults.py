@@ -26,12 +26,8 @@ class BingSearchResults:
             print("Oops! There's an error...")
             return 0
         self.website_link = result.get_attribute('href')
-        # try:
-        #     print("\nWebsite Link: " + self.website_link)
-        # except TypeError:
-        #     None
         if self.website_link is not None:
-            if self.website_link.find('expedia.com') != -1 & self.website_link.endswith('Hotel-Information'):
+            if self.website_link.find('expedia.com') != -1 and self.website_link.endswith('Hotel-Information'):
                 return 1
         return 0
 

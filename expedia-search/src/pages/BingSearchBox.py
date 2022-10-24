@@ -1,6 +1,4 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 
 class BingSearchBox:
@@ -15,7 +13,3 @@ class BingSearchBox:
 
     def submit_search(self):
         self.driver.execute_script("document.getElementById('sb_form_go').click()")
-        # search_button = WebDriverWait(self.driver, 10).until(
-        #     EC.presence_of_element_located((By.ID, "sb_form_go"))
-        # )
-        # search_button.click()
